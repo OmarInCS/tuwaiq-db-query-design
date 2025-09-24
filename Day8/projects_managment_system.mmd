@@ -1,0 +1,52 @@
+erDiagram
+
+    Departments |o--|| Employees : "managed by"
+    Employees ||--o{ Dependents : "has"
+    Departments ||--o{ Employees : "has"
+    Departments ||--o{ Projects : "has"
+    Projects ||--o{ ProjectEmployees : "has"
+    ProjectEmployees }o--|| Employees : "assigned"
+    Employees }o--|| Employees : "supervised by"
+    
+
+    Employees {
+        varchar(10) SSN PK
+        date BirthDate
+        varchar Gender
+        varchar Fname
+        varchar Lname
+        date HireDate
+        int DNUM FK 
+        varchar(10) SupervisorSSN FK
+    }
+
+    Departments {
+        int DNUM PK
+        varchar DName
+        varchar Locations
+        varchar(10) ManagerSSN FK
+    }
+
+    Projects {
+        int PNumber PK
+        varchar Pname
+        varchar Location
+        varchar City
+        int DNUM FK
+    }
+
+    ProjectEmployees {
+        int AssignmentNumber PK
+        int PNumber FK
+        varchar(10) SSN FK
+        int WorkingHours
+    }
+
+    Dependents {
+        varchar(10) SSN PK
+        varchar DName "unique"
+        varchar Gender 
+        date BirthDate
+        varchar(10) ParentSSN FK "on delete cascade"
+    }
+

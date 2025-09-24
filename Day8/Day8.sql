@@ -201,11 +201,11 @@ ERD: Entity Relationship Diagram (Conceptual, Physical)
 A big company has decided to store information about its projects and employees in 
 a database. The company has wisely chosen to hire you as a database designer. 
 Prepare an E-R diagram for this Company according to The following Description: 
-	• The company has a number of employees each employee has SSN, Birth Date, 
+	• The company has a number of **employees** each employee has SSN, Birth Date, 
 	Gender and Name which represented as Fname and Lname. 
-	• The company has a set of departments each department has a set of attributes 
+	• The company has a set of **departments** each department has a set of attributes 
 	DName, DNUM (unique) and locations. 
-	• Employees work in several projects each project has Pname, PNumber as an 
+	• Employees work in several **projects** each project has Pname, PNumber as an 
 	identifier, Location and City. 
 	• Each employee may have a set of dependent; each dependent has Dependent 
 	Name (unique), Gender, and Birth Date. 

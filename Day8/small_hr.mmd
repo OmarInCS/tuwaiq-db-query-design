@@ -1,0 +1,27 @@
+erDiagram
+    
+    Employees }o--|| Departments : "works"
+    Employees ||--|{ EmployeeSkills : ""
+    EmployeeSkills }|--|| Skills : ""
+    
+    %% Employees {
+    %%     int emp_id PK
+    %%     varchar emp_name
+    %%     int dept_id FK
+    %% }
+
+    %% Departments {
+    %%     int dept_id PK
+    %%     varchar dept_name
+    %%     varchar location
+    %% }
+
+    %% Skills {
+    %%     int skill_id PK
+    %%     varchar name
+    %% }
+
+    %% EmployeeSkills {
+    %%     int emp_id PK,FK
+    %%     int skill_id PK, FK
+    %% }

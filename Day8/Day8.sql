@@ -3,7 +3,7 @@ Name: Omar Karem
 ------------------------------------------
 
 
-Boys: 55 + 7
+Boys: 55 + 25
 Girls: 55 + 13
 
 
@@ -195,6 +195,9 @@ ERD: Entity Relationship Diagram (Conceptual, Physical)
 	- Primary Key and Foreign Key
 	- Cardinality and Modality
 	- Normalization (1NF, 2NF, 3NF)
+		1NF: Entities, Repeating Groups, Multivalued Attributes
+		2NF: Remove partial dependency
+		3NF: Remove internal dependency
 
 ---------------------- Examples ------------------------
 

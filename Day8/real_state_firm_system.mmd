@@ -1,0 +1,9 @@
+erDiagram
+    SalesOffice ||--o{ Employees : ""
+    SalesOffice |o--|| Employees : ""
+    SalesOffice ||--o{ Property : ""
+    Property ||--o{ Ownership : ""
+    Ownership }|--|| Owner : ""
+    Location ||--o| SalesOffice : ""
+    Location ||--o| Property : ""
+
